@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+form input, form textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+p.error, p.success {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+p.error {
+    background-color: hsl(0, 30%, 30%);
+    border-color: hsl(0, 30%, 50%);
+
+}
+ 
+p.success {
+    background-color: hsl(200, 50%, 50%);
+    border-color: hsl(225, 30%, 50%);
+}
+
+.container {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.content {
+    margin: 0 auto;
+    text-align: left;
+    padding: 15px 35px;
+}
+
+.commentbox .comment {
+    min-height: 110px;
+    list-style: none;
+    clear: both;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    background-color: hsla(0, 0%, 25%, 0.15);
+}
+
+.comment > .title {
+    margin-bottom: 0.8rem;    
+}
+
+.comment > .avatar {
+    width: 85px;
+    float: left;
+
+    font-weight: bold;
+}
+
+.comment > .avatar img {
+    padding: 5px;
+    background-color: hsl(225, 30%, 30%);
+}
+
+.comment p {
+    min-height: 110px;
+    float: left;
+    margin-left: 1rem;
+}
