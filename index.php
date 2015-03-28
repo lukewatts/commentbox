@@ -17,26 +17,13 @@ require_once('app/controller.php');
                 <div class="content">
                     
                     <?php display_commentbox(8); ?>
-                
-                    <form action="" method="post">
-                        <h2>Shout! Let it all out!</h2>
-                        <div class="fname">
-                            <label for="name">Name: </label>
-                            <input id="name" name="name" type="text" cols="20" />
-                        </div>
-                        <div class="femail">
-                            <label for="email">Email: </label>
-                            <input id="email" name="email" type="text" cols="20" />
-                        </div>
-                        <textarea name="comment" rows="5" cols="40"></textarea>
-                        <input name="send" type="hidden" />
-                        <p><input type="submit" value="send" /></p>
-                    </form>
                  
                 </div><!--.content-->
             
             </div>
 
         </div><!--.container-->
+        <script src="http://127.0.0.1/cdn/jquery/2.1.3/jquery.min.js"></script>
+        <script src="http://127.0.0.1/commentbox/script.js"></script>
     </body>
 </html>
