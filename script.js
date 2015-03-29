@@ -7,7 +7,5 @@ function refresh()
 }
 
 $(document).ready(function() {
-
-refresh();
-    
+    refresh();
 });

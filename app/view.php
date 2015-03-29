@@ -43,8 +43,8 @@ while ($comment = $query->fetch()) {
 }
 ?>
 </ul>
+<h2 style="text-align:left;">Shout!</h2>
 <form class="commentform" action="" method="post">
-    <h2>Shout! Let it all out!</h2>
     <div>
         <label for="name">Name: </label>
         <input id="name" name="name" type="text" />
@@ -54,6 +54,7 @@ while ($comment = $query->fetch()) {
         <input id="email" name="email" type="email" />
     </div>
     <div>
+        <label for="comment">Comment:</label>
         <textarea id="comment" name="comment" rows="5"></textarea>
     </div>
     <div>
