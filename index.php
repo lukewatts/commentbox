@@ -16,7 +16,7 @@ require_once('app/controller.php');
              
                 <div class="content">
                     
-                    <?php display_commentbox(8); ?>
+                    <?php display_commentbox(5); ?>
                  
                 </div><!--.content-->
             

@@ -43,19 +43,22 @@ while ($comment = $query->fetch()) {
 }
 ?>
 </ul>
-<form action="" method="post">
+<form class="commentform" action="" method="post">
     <h2>Shout! Let it all out!</h2>
-    <div class="fname">
+    <div>
         <label for="name">Name: </label>
-        <input id="name" name="name" type="text" cols="20" />
+        <input id="name" name="name" type="text" />
     </div>
-    <div class="femail">
+    <div>
         <label for="email">Email: </label>
-        <input id="email" name="email" type="text" cols="20" />
+        <input id="email" name="email" type="email" />
     </div>
-    <textarea name="comment" rows="5" cols="40"></textarea>
-    <input name="send" type="hidden" />
-    <p><input type="submit" value="send" /></p>
+    <div>
+        <textarea id="comment" name="comment" rows="5"></textarea>
+    </div>
+    <div>
+        <input type="submit" name="submit" value="Send" />
+    </div>
 </form>
 
 <?php

@@ -2,7 +2,7 @@
 require_once('model.php');
 require_once('view.php');
 
-if(isset($_POST['send'])) {
+if(isset($_POST['submit'])) {
     if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['comment'])) {
         $output = '<p class="error">You did not fill in a required field.</p>';
     } else {
@@ -23,5 +23,5 @@ if(isset($_POST['send'])) {
         $output = ($insert->execute($data)) 
         ? message('Thanks for commenting!', 'success') 
         : message('There was an error submitting your comment. Please try again later.', 'error');
-    }
+    } 
 }
