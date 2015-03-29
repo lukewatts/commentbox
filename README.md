@@ -11,7 +11,7 @@ PHP, MySQl and AJAX comment box which shows the specified amount of comments abo
 
 Usage
 -----
-Simply add the 'commentbox' directory to you're project and require_once('commentbox/controller.php') file.
+Simply add the 'commentbox' directory to you're project and `require_once('commentbox/controller.php')` at the top of the page(s) you want the comment box on.
 
 Then use `display_commentbox(5)` (where 5 is the number of comments to display) where you want the comments and form to be displayed.
 
@@ -27,7 +27,8 @@ index.php: Simple homepage demonstrating the comment box.
 
 Schema
 ------
-```CREATE SCEMA commentbox;
+``` sql
+CREATE SCHEMA commentbox;
 USE commentbox;
 
 CREATE TABLE comments (
